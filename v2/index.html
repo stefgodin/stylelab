@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        @media screen and (min-width: 800px) {
+            div {
+                font-size: 18px;
+            }
+        }
+    </style>
+  </head>
+  <body>
+    <script src="style.js" defer></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <div x-data="{ count: 1 }">
+      <button x-on:click="count++" x-text="count"></button>
+
+
+      <div style:xs="font-size: 2rem"
+           :style:sm="`font-size: ${count}rem`">Title
+        <h5 style:sm:hover="color: red">Yes</h5>
+        <button x-on:click="count--">X</button>
+      </div>
+      <template x-for="i in count">
+        <div style:xs="font-size: 2rem"
+             :style:sm="`font-size: ${count}rem`">Title
+          <h5 style:sm:hover="color: red">Yes</h5>
+          <button x-on:click="count--">X</button>
+        </div>
+      </template>
+    </div>
+  </body>
+</html>

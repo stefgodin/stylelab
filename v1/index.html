@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+      * {
+          --s1: 1rem;
+          --s2: 1.25rem;
+          --s3: 1.5rem;
+          --s4: 1.75rem;
+          --s5: 2.5rem;
+
+          --c-main: blue;
+          --c-alt: red;
+      }
+    </style>
+  </head>
+  <body>
+    <h2 style="display: block; color: var(--c-main)"
+        xs:style=""
+        sm:style="color: yellow"
+        md:style="color: red"
+        lg:style="color: orange"
+        xl:style="color: var(--c-alt)"
+        xxl:style="color: green"
+        print:style="background-color: black; color: white">
+      Hello
+    </h2>
+    <h2 style="display: block; color: blue"
+         sm:style="color: yellow"
+         md:style="color: red"
+         lg:style="color: orange"
+         xl:style="color: purple"
+         xxl:style="color: green">
+      Hi
+    </h2>
+    <h2 style="display: block; color: blue"
+         sm:style="color: yellow"
+         md:style="color: red"
+         lg:style="color: orange"
+         xl:style="color: purple"
+         xxl:style="color: green">
+      Bye
+    </h2>
+    <h2 style="display: block; color: blue"
+         sm:style="color: yellow"
+         md:style="color: red"
+         lg:style="color: orange"
+         xl:style="color: purple"
+         xxl:style="color: green">
+      Byuwick
+    </h2>
+
+    <script src="style.js"></script>
+  </body>
+</html>
